@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 350px;
+    height: 400px;
+    padding: 1.5rem;
+    background-color: lightslategrey;
+
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+ 
+  
+ .Wrapper{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+ }
+
+ .Card{
+    width: 300px;
+    background-color: antiquewhite;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+ }
+
+ .Card h4{
+text-align: left;
+ }
+
+  form button {
+    margin: auto;
+    display: block;
+  }
+  
+  li {
+    list-style: none;
+    border: 1px solid grey;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  li > h4 {
+    font-weight: 400;
+  }
+  li span {
+    font-weight: bold;
+  }
+  
+  li button {
+    margin-right: 1rem;
+    padding: 0.25rem 1.25rem;
+  }
+  
+  .btn-delete {
+    margin-top: 18px;
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+    width: 70%;
+
+  }
+  
+  .btn-edit {
+    border: 1px solid navy;
+    background-color: navy;
+    color: white;
+    margin-top: 18px;
+    width: 70%;
+  }
+  
