@@ -17,7 +17,7 @@ function App() {
 
   const getAPIData = () => {
     axios
-      .get("https://rickandmortyapi.com/api/character")
+      .get("https://products-crud.academlo.tech/products/")
       .then((resp) => setProducts(resp.data))
       .catch((error) => console.error(error));
   };
