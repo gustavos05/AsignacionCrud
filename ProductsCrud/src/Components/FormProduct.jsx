@@ -81,9 +81,7 @@ const FormProduct = ({ createProductData, productSelectedData, updateProduct }) 
           <input
             type='checkbox'
             id="isAvailable"
-            {...register("isAvailable", {
-              required: true
-            })}
+            {...register("isAvailable", )}
           className='input'/>
           <div className="rail"><span className="circle"></span></div>
           <span className="indicator"></span>

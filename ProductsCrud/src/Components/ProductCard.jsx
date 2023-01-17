@@ -10,6 +10,7 @@ const ProductCard = ({products, deleteProduct, selectProduct}) => {
                     <div className="Card" key={`products-${index}`}>
                         <h4><span>Name:</span> {productElement.name}</h4>
                         <h4><span>Category: </span> {productElement.category}</h4>
+                        <h4>{productElement.isAvailable?'disponible':'No disponible'}</h4>
                         <button className="btn-delete" onClick={ () => deleteProduct(productElement.id) }>Delete</button>
                         <button className="btn-edit" onClick={ () => selectProduct(productElement) } >Select</button>
                     </div>
