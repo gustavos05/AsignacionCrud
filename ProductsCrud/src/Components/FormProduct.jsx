@@ -36,11 +36,10 @@ const FormProduct = ({ createProductData, productSelectedData, updateProduct }) 
 
   const resetForm = () => {
     reset({
-      first_name: "",
-      email: "",
-      last_name: "",
-      password: "",
-      birthday: ""
+      name: "",
+      category: "",
+      price: "",
+      itsAvailable: false
     });
   };
 
@@ -78,18 +77,21 @@ const FormProduct = ({ createProductData, productSelectedData, updateProduct }) 
           <input type='number' id="price" {...register("price")} />
         </div>
         <div className="input-wrapper">
-          <label htmlFor="isAvailable">Available</label>
+          <label htmlFor="isAvailable" className="switch">Available
           <input
             type='checkbox'
             id="isAvailable"
             {...register("isAvailable", {
               required: true
             })}
-          />
+          className='input'/>
+          <div className="rail"><span className="circle"></span></div>
+          <span className="indicator"></span>
           {errors.name?.type === "required" && (
             <span role="alert">Este input es requerido</span>
-          )}
+          )}</label>
         </div>
+
 
         <button className="btn-edit" type="submit">
           Send
